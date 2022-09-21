@@ -1,0 +1,457 @@
+*{
+    font-family: 'Lato';
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 24px;
+    border-bottom: 8px solid #333333;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-header {
+    background: #E0E0E0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+
+.menu {
+    margin-right: 18px;
+}
+
+.content {
+    box-sizing: border-box;
+    position: center;
+    margin: auto;
+    top: 25px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+
+
+/* Menu Lateral dispositivo movel */
+
+.container-menu {
+    width: 339px;
+    height: 100%;
+    background: #333333;
+    display: none;
+    position: fixed;
+    transition: all 0.5s;
+    top: 0%;
+}
+
+.container-menu a {
+    text-align: end;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    padding:  7px 20px 7px 0px;
+}
+
+.container-menu li:nth-child(1) {
+    margin: 0px;
+}
+
+input[ type="checkbox"] {
+    display: none;
+}
+
+.container-menu li {
+    margin-bottom: 12px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.container-menu a hover {
+    background: #c4c4c4;
+    color: #333333;
+    font-weight: 600;
+}
+
+.container-menu ul {
+    top: 20px;
+    position: relative;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+.menu-img {
+    margin-bottom: 26px;
+    margin-left: 20px;
+}
+
+/* Tipo de transação */
+
+.form-exemplo {
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-body {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.button-box {
+    width: 90%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 100%;
+    height: 32px;
+    background: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+/* Extrato de transações */
+
+.extrato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.titulo-extrato {
+    margin-top: 41px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-weight: bold;
+    margin: 0px 25px;
+}
+
+.tabela {
+    height: auto;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.container-extrato {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 6px 0px;
+    align-items: flex-start;
+    align-content: center;
+    border-bottom: 1px solid #000;
+}
+
+.tabela:nth-child(1) {
+    margin: 0px 10px;
+}
+
+.tabela:nth-child(2){
+    width: 68%;
+}
+
+.tabela:nth-child(3){
+    width: 26.5%;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.container-extrato:nth-child(6){
+    margin-top: 2px;
+    border-top: 1px solid #000;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.resultdo:nth-child(1) {
+    margin-left: 26px;
+}
+
+.resultdo:nth-child(2) {
+    margin-right: 10px;
+}
+
+.resultdo:nth-child(3) {
+    margin-right: 10px;
+    width: 100%;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*Tablet*/
+
+@media  screen and (min-width: 768px) {
+
+    .content {
+        margin-top: 20px;
+    }  
+
+    /* Menu lateral */
+
+    .container-menu {
+        width: 252px;
+    }
+
+    input[type="checkbox"]:checked ~ .container-menu {
+        display: block;
+        transform:translateX(-210px);
+    }
+
+
+
+    .form-exemplo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        align-content: space-between;
+        border: 1px solid #979797;
+    }
+
+    .form-exemplo::before {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        font-size: 18px;
+        margin: 20px 0px;
+        font-weight: bold;
+    }
+
+    .form-body:nth-child(1),
+    .form-body:nth-child(3) {
+        width: 19.5%;
+        height: 54px;
+    }
+
+    .form-body:nth-child(2) {
+        width: 45.4%;
+        height: 54px;
+        margin: 0px 20px;
+    }
+
+    .button-box {
+        width: 90%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border:none;
+        justify-content: flex-end;
+    }
+
+    .button {
+        width: 200px;
+    }
+
+    .extrato {
+        margin-bottom: 427px;
+    }
+  
+    .resultado:nth-child(1) {
+        margin-left: 40px;
+    }
+
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1112px) {
+    .container-header {
+        height: 80px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .container-titulo {
+        width: 411px;
+        height: 43px;
+        margin-left: 20px;
+        margin-right: 249px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-lateral {
+        display: none;
+
+    }
+
+    .menu .container-menu{
+        width: 350px;
+        height: 40px;
+        background: #FFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: unset;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-menu ul {
+        display: flex;
+        position: unset;
+        margin: 0px;
+        top: 0px;
+        padding: 0px;
+    }
+    
+    .container-menu a {
+        padding: 0px;
+        color: #333333;
+        font-weight: bold;
+    }
+    
+    .container-menu a:hover {
+        cursor: pointer;
+        background: none;
+    }
+
+    .container-menu li {
+        margin: 0px;
+    }
+
+    .cadastro::after {
+        content: "|";
+        margin: 0px 20px;
+    }
+
+    .imagem {
+        margin-left: 20px;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .form-exemplo {
+        width: 400px;
+        height: 344px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        margin-right: 20px;
+    }
+
+    .form-exemplo::before {
+        margin-bottom: 20px;
+    }
+    
+      .form-exemplo .form-body {
+        width: 370px;
+    }
+    
+      .form-exemplo {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .button-box {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .button {
+        width: 370px;
+    }
+
+    /*Extrato de transações*/
+
+    .extrato {
+        width: 652px;
+        height: 281px;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .titulo-extrato{
+        margin: 0px;
+    }
+
+
+    
+}
+
+/*
+.extrato table {
+    width: 100%;
+    text-align: left;
+}
+
+.extrato table td, .extrato table th {
+    border-bottom: 1px solid black;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.extrato table tfoot td {
+    border: 0;
+}

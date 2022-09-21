@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Controle Financeiro
+        </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? family= Lato & display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <div class="imagem">
+                    <img class="logo" src="logo.svg" alt="Logo">
+                </div>
+
+                <div class="container-titulo">
+                    <span class="titulo">Controle Financeiro</span>  
+                </div>
+
+                <!-- Menu Lateral -->
+
+                <div class = "menu">
+                    <input type="checkbox" id="chec">                    
+                    <label class="menu-lateral" for="menu-lat">
+                        <img class="menu-img" src="mobile-menu.svg" alt="Menu">
+                    </label>
+
+                    <nav class="container-menu">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="chec">
+                                <label class="menu-lateral" for="menu-lat">
+                                    <img class="fechar-menu" src="Vector.png" alt="Fechar Menu">
+                                </label>
+                            </li>
+                            <li> <a class="cadastro" href="##">Cadastro de transações</a>
+                            </li>
+                            <li> <a class="limpar" href="##">Limpar dados</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>
+        </header>
+
+        <!--Tipo de transação-->
+
+        <div class="content">
+            <div class="form-exemplo">
+                <div class="form-header">
+                </div>
+                <section>
+                    <div class="form-body">
+                        <form action="index.html" method="GET">
+                            Tipo de transação
+                            <br>
+                            <input placeholder="Compra" type="text" id="compra" name="compra">
+                            <br><br>
+                            Nome da mercadoria
+                            <br>
+                            <input placeholder="Input" type="text" id="input" name="input">
+                            <br><br>
+                            Valor 
+                            <br>
+                            <input placeholder="Valor" type="number" id="valor" name="valor">
+                            <br><br>
+    
+                            <div class="button-box">
+                                <button class="button">Adicionar transação</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--Extrato de transação-->
+
+        <div class="extrato">
+            <section>
+                <div class="titulo-extato">
+                    <p>Extrato de transações</p>
+                </div>
+
+                <table cellspacing="0">
+                    <thead class="container-extrato">
+                        <tr>
+                            <th></th>
+                            <th class="subtitulo">Mercadoria</th>
+                            <th class="subtitulo">Valor</th>
+                        </tr>
+
+                    </thead>
+                    <tbody class="container-extrato">
+                        <tr>
+                            <td class="tabela">+</td>
+                            <td class="tabela">Lorem ipsum dolor sit amet consectetur</td>
+                            <td class="tabela">R$ 12.999,99</td>
+                        </tr>
+                        <tr>
+                            <td class="tabela">-</td>
+                            <td class="tabela">Quis nostrud exercitation</td>
+                            <td class="tabela">R$ 99,99</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr class="container-extrato">
+                            <td></td>
+                            <td class="resultado">Total</td>
+                            <td class="resultado">R$ 12.909,99</td>
+                            <tr></tr>
+                            <td class="resultado">[LUCRO]</td>
+                        </tr>
+
+                    </tfoot>
+                   
+                </table>
+            </section>
+        </div>
+
+        <!--Final da  página-->
+
+        <footer>
+            <div class="rodape">
+            </div>
+        </footer>
+    </body>
+</html>
